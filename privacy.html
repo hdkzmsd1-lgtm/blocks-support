@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BLOCKS - 3D Puzzle サポートページ。操作方法、不具合、お問い合わせをご案内します。">
+  <meta name="theme-color" content="#f3eadc">
+  <title>BLOCKS - 3D Puzzle | Support</title>
+  <style>
+    :root{
+      --bg:#f3eadc; --paper:#fbf6ed; --ink:#26231f; --muted:#746d63;
+      --line:#d8cbb9; --accent:#b86948; --shadow:rgba(70,52,36,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; color:var(--ink); background:
+      radial-gradient(circle at 85% 8%, rgba(255,255,255,.9), transparent 26%),
+      linear-gradient(180deg,#f6efe5 0%,var(--bg) 100%);
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Noto Sans JP",sans-serif;
+      line-height:1.75;
+    }
+    .wrap{width:min(900px,calc(100% - 40px));margin:auto}
+    header{padding:26px 0;border-bottom:1px solid rgba(90,70,50,.12)}
+    .brand{font-weight:800;letter-spacing:.12em;text-decoration:none;color:var(--ink)}
+    main{padding:76px 0 90px}
+    .eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;color:var(--accent);margin:0 0 14px}
+    h1{font-size:clamp(42px,8vw,76px);line-height:1.02;letter-spacing:-.04em;margin:0 0 22px}
+    .lead{font-size:18px;color:var(--muted);max-width:650px;margin:0 0 48px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{
+      background:rgba(255,255,255,.48);border:1px solid var(--line);border-radius:24px;
+      padding:28px;box-shadow:0 18px 50px var(--shadow)
+    }
+    .card h2{font-size:19px;margin:0 0 10px}
+    .card p{margin:0;color:var(--muted)}
+    .contact{margin-top:18px}
+    .contact a{
+      display:inline-block;margin-top:14px;padding:13px 18px;border-radius:999px;
+      background:var(--ink);color:white;text-decoration:none;font-weight:700
+    }
+    footer{padding:26px 0 38px;border-top:1px solid rgba(90,70,50,.12);color:var(--muted);font-size:13px}
+    @media(max-width:650px){
+      main{padding-top:52px}.grid{grid-template-columns:1fr}.card{padding:24px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap"><a class="brand" href="/">BLOCKS.</a></div>
+  </header>
+
+  <main class="wrap">
+    <p class="eyebrow">BLOCKS — 3D PUZZLE / SUPPORT</p>
+    <h1>Support</h1>
+    <p class="lead">BLOCKSをご利用いただきありがとうございます。操作方法や不具合についてお困りの際は、こちらをご確認ください。</p>
+
+    <div class="grid">
+      <section class="card">
+        <h2>TUMBLE</h2>
+        <p>画面をスワイプして箱を90°回転させ、重力の向きを変えて金属のボールをゴールへ導きます。</p>
+      </section>
+
+      <section class="card">
+        <h2>FIT</h2>
+        <p>木製ピースをドラッグして木枠へ配置します。必要に応じて90°回転させ、すべての空間を埋めるとクリアです。</p>
+      </section>
+
+      <section class="card">
+        <h2>うまく動作しない場合</h2>
+        <p>アプリを一度終了して再起動してください。改善しない場合は、iPhoneとiOSのバージョン、発生した画面や操作内容を添えてお問い合わせください。</p>
+      </section>
+
+      <section class="card contact" id="contact">
+        <h2>お問い合わせ</h2>
+        <p>不具合・ご質問などは、下記メールアドレスまでご連絡ください。</p>
+        <a href="mailto:hdkzmsd1@gmail.com">hdkzmsd1@gmail.com</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Hidekazu Masuda · BLOCKS - 3D Puzzle</div>
+  </footer>
+</body>
+</html>
